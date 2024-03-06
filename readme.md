@@ -8,4 +8,4 @@
 - ```python -m pip install mkdocs --user```, para instalar o MKDocs
 - ```python -m pip install mkdocs-material --user```, para instalar o tema que é utilizado na documentação
 6. Escrever no terminal ```python -m mkdocs serve``` para iniciar o servidor.
-7. Aceder no browser a <http://127.0.0.1:8000/>
+7. Aceder no browser a <http://localhost:8000/>
