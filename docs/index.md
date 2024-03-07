@@ -1,4 +1,4 @@
-# Bem vindo ao Algorithmi Backoffice!
+# Bem-vindo ao Algorithmi Backoffice!
 *** 
 ## Para correr o projeto localmente - NodeJS
 
