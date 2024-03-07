@@ -21,6 +21,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
@@ -31,22 +41,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/api.Authentication/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/Classes%20em%20api.Authentication/Login.java/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/Classes%20em%20api.Authentication/Register.java/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/api.Worksheets/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
