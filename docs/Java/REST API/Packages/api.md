@@ -1,7 +1,8 @@
 # api
+*** 
 Package com classes que representam endpoints com finalidade genérica na API.
 
-## LanguagesAPI
+## LanguagesAPI.java
 Esta classe do tipo Servlet representa um endpoints da API que tem como objetivo a tradução do código escrito no **Algorithmi** para diversas linguagens de programação.
 
 ### Como utilizar este endpoint?

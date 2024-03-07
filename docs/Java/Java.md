@@ -1,4 +1,5 @@
 # Servlets
+*** 
 ## O que é um Servlet?
 Um Servlet é uma classe que pode ser configurada num servidor que implemente um *Servlet Container* (como é o caso do GlassFish Server).
 <br>
