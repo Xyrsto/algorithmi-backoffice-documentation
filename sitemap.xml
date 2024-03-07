@@ -16,12 +16,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/</loc>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/JWT/Porqu%C3%AA%20JWT/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -32,6 +27,101 @@
     </url>
     <url>
          <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/myUtils/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/api.Authentication/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/Classes%20em%20api.Authentication/Login.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Authentication/Classes%20em%20api.Authentication/Register.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/api.Worksheets/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/DeleteProblem.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/DeleteWorksheet.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetCourses.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetDifficulties.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetLanguages.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetProblem.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetProblems.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetUserProblem.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetWorksheet.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetWorksheetProblems.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/GetWorksheets.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/InsertProblem.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/InsertWorksheet.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/UpdateProblem.java/</loc>
+         <lastmod>2024-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages/api.Worksheets/Classes%20em%20api.Worksheets/UpdateWorksheet.java/</loc>
          <lastmod>2024-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
