@@ -1,17 +1,50 @@
-# Welcome to MkDocs
+# Bem vindo ao Algorithmi Backoffice!
+*** 
+## Para correr o projeto localmente - NodeJS
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+1. Instalar [Node.js](https://nodejs.org/en/download/) se ainda não estiver instalado
+2. Clonar o repositório
+3. Dentro da pasta do projeto, executar:
+    - `npm install` (apenas na primeira vez para instalar as dependências)
+    - `npm run dev` (para correr o projeto)
+4. Abrir o navegador em <http://localhost:5173>
 
-## Commands
+## Para correr o projeto localmente - Java
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+1. Instalar o IDE [Netbeans](https://netbeans.apache.org/front/main/download/nb21/) se ainda não estiver instalado
+2. Clonar o repositório
+3. No Netbeans, selecionar na barra superior **"Service"** → **"Servers"** → **"Add Server"**
+4. Selecionar a opção **"GlassFish Server"**. É importante instalar a versão 5.1.0 deste servidor.
+<br/>
+![alt text](image.png)
+5. Escolher o nome do servidor, onde o queremos alojar, ativar *Driver* JDBC e qual a plataforma Java que pretendemos associar ao mesmo
+<br/>
+![alt text](image-1.png)
+![alt text](image-2.png)
+6. Carregar botão direito em cima do projeto chamado **"AlgorithmiBO"** e selecionar **"Clean and Build"**. Após isso, selecionar **"Run"**
+7. Abrir o navegador em <http://localhost:8080>
 
-## Project layout
+## Ambiente de Desenvolvimento
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Utilizar o editor [Visual Studio Code](https://code.visualstudio.com/) com as seguintes extensões:
+
+### Para desenvolvimento geral
+
+- [JavaScript and TypeScript Nightly](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next)
+- [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+- [Svelte Intellisense](https://marketplace.visualstudio.com/items?itemName=ardenivanov.svelte-intellisense)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Tecnologias utilizadas
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Prettier](https://prettier.io/)
+- [Svelte](https://svelte.dev/)
+- [SvelteKit](https://kit.svelte.dev/)
+- [Skeleton](https://www.skeleton.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Monaco Editor](https://microsoft.github.io/monaco-editor/)
+- [Xterm.js](https://xtermjs.org/)
+- [Comlink](https://github.com/GoogleChromeLabs/comlink)
+- [ANTLR](https://www.antlr.org/)
