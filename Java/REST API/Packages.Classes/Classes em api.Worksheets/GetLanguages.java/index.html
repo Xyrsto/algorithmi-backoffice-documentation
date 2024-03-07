@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#getlanguagesjava" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -891,6 +896,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GetLanguages.java
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -901,6 +919,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-utilizar-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como utilizar este endpoint?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-um-pedido-enviado-para-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de um pedido enviado para este endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta bem sucedida (código 200 OK)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1163,9 +1236,36 @@
                   
 
 
-  <h1>GetLanguages.java</h1>
-
-
+<h1 id="getlanguagesjava">GetLanguages.java</h1>
+<p>Esta classe do tipo Servlet representa um endpoint da API que tem como objetivo obter a lista de todas as linguagens na base de dados.
+<br>
+Ao receber um pedido HTTP, este endpoint verifica a validade do token JWT fornecido no corpo do pedido para garantir a autorização do utilizador.</p>
+<h3 id="como-utilizar-este-endpoint">Como utilizar este endpoint?</h3>
+<ol>
+<li>Dependendo da maneira como estiver a correr o projeto, deverá utilizar um dos dois URL's abaixo:<ul>
+<li>Se o projeto estiver a ser corrido localmente, deverá usar o URL <a href="http://localhost:8080/api/GetLanguages">http://localhost:8080/api/GetLanguages</a></li>
+<li>Se o projeto estiver a ser corrido remotamente, deverá usar o URL <a href="http://ram.ipt.pt:8080/api/GetLanguages">http://ram.ipt.pt:8080/api/GetLanguages</a></li>
+</ul>
+</li>
+<li>Deverá enviar (em formato <strong>JSON</strong>) no corpo do pedido HTTP os seguintes parâmetros:<ul>
+<li><code>"jwtToken"</code>: parâmetro do tipo string. Contém o token JWT que autoriza o utilizador a realizar a operação.</li>
+</ul>
+</li>
+<li>O endpoint retorna a lista de todas as linguagens na base de dados se o token JWT for válido.</li>
+</ol>
+<h3 id="exemplo-de-um-pedido-enviado-para-este-endpoint">Exemplo de um pedido enviado para este endpoint</h3>
+<pre><code class="language-json">{
+    &quot;jwtToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c...&quot;
+}
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok">Exemplo de uma resposta bem sucedida (código 200 OK)</h3>
+<pre><code class="language-json">[
+    {&quot;id&quot;:1,&quot;language&quot;:&quot;pt_pt&quot;},
+    {&quot;id&quot;:2,&quot;language&quot;:&quot;en_uk&quot;}
+]
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized">Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)</h3>
+<p>Se token enviado não for válido, o servidor devolve <code>"401 - Token not valid"</code>. Isto significa que o token <strong><em>JWT</em></strong> enviado não é válido. Isto pode acontecer em várias situações, como por exemplo, se o token já não existir.</p>
 
 
 
