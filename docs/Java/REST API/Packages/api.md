@@ -18,7 +18,7 @@ Esta classe do tipo Servlet representa um endpoints da API que tem como objetivo
 
 - **"c#"** : traduz o código para C#
 - **"c++"** : traduz o código para C++
-- **"javascript - html - css**" : traduz o código para uma página HTML com JavaScript e CSS
+- **"javascript - html - css"**" : traduz o código para uma página HTML com JavaScript e CSS
 - **"java"** : traduz o código para Java
 - **"c language c11"** : traduz o código para um standard antigo de C (ISO/IEC 9899:2011)
 - **"python 3"** : traduz o código para Python 3
