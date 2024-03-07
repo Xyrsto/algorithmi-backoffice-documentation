@@ -1,4 +1,5 @@
 site_name: Algorithmi Backoffice
+site_url: https://xyrsto.github.io/algorithmi-backoffice-documentation/
 theme:
   name: material
   features:
