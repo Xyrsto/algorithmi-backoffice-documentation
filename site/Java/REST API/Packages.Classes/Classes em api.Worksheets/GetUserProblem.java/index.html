@@ -73,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#getuserproblemjava" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -954,6 +959,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GetUserProblem.java
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -964,6 +982,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-utilizar-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como utilizar este endpoint?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-um-pedido-enviado-para-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de um pedido enviado para este endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta bem sucedida (código 200 OK)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variacoes-na-resposta-bem-sucedida" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variações na resposta bem sucedida
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1163,9 +1245,67 @@
                   
 
 
-  <h1>GetUserProblem.java</h1>
-
-
+<h1 id="getuserproblemjava">GetUserProblem.java</h1>
+<p>Esta classe do tipo Servlet representa um endpoint da API que tem como objetivo obter detalhes sobre um problema específico de um utilizador.
+<br>
+Ao receber um pedido HTTP, este endpoint verifica a validade do token JWT fornecido no corpo do pedido para garantir a autorização do utilizador.</p>
+<h3 id="como-utilizar-este-endpoint">Como utilizar este endpoint?</h3>
+<ol>
+<li>Dependendo da maneira como estiver a correr o projeto, deverá utilizar um dos dois URL's abaixo:<ul>
+<li>Se o projeto estiver a ser corrido localmente, deverá usar o URL <a href="http://localhost:8080/api/GetUserProblem">http://localhost:8080/api/GetUserProblem</a></li>
+<li>Se o projeto estiver a ser corrido remotamente, deverá usar o URL <a href="http://ram.ipt.pt:8080/api/GetUserProblem">http://ram.ipt.pt:8080/api/GetUserProblem</a></li>
+</ul>
+</li>
+<li>
+<p>Deverá enviar (em formato <strong>JSON</strong>) no corpo do pedido HTTP os seguintes parâmetros:</p>
+<ul>
+<li><code>"id"</code>: parâmetro do tipo inteiro. Contém o ID do problema que o utilizador deseja obter detalhes.</li>
+<li><code>"jwtToken"</code>: parâmetro do tipo string. Contém o token JWT que autoriza o utilizador a realizar a operação.</li>
+</ul>
+</li>
+<li>
+<p>O endpoint retorna os detalhes do problema para o utilizador, incluindo título, descrição, pontos, vídeo relacionado, código do problema, eficácia do utilizador, eficiência do utilizador e originalidade do utilizador.</p>
+</li>
+</ol>
+<h3 id="exemplo-de-um-pedido-enviado-para-este-endpoint">Exemplo de um pedido enviado para este endpoint</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: 123,
+    &quot;jwtToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c...&quot;,   
+}
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok">Exemplo de uma resposta bem sucedida (código 200 OK)</h3>
+<pre><code class="language-json">{
+    &quot;point&quot;: 3.0,
+    &quot;inputs&quot;: {
+        &quot;&quot;: &quot;\\     /break \\   /break  \\ /break\&quot;\&quot;\&quot;V\&quot;\&quot;\&quot;&quot;
+    },
+    &quot;difficulty&quot;: 3,
+    &quot;id&quot;: 7,
+    &quot;language&quot;: 1,
+    &quot;author&quot;: &quot;username&quot;,
+    &quot;date&quot;: &quot;16/05/2022&quot;,
+    &quot;descript&quot;: &quot;&lt;p style=\\\&quot;text-align: center;\\\&quot;&gt;&lt;strong&gt;&lt;span style=\\\&quot;color: rgbrgb(65, 168, 95); font-size: 18px;\\\&quot;&gt;Construa um algoritmo que imprima na consola o seguinte texto:&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&quot;,
+    &quot;image&quot;: &quot;data:image/png;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCABzAHYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+Ib9rv/k7H9p//s4f41f+rJ8S1w3xf+Gf/CovHWoeBv8AhYPwx+J/9n2OjX3/AAmHwg8V/wDCa+Bb3+2NKtNV+yaf4g+wW32m+tftf2a8j8lfIuraaHLbNx7n9rv/AJOx/af/AOzh/jV/6snxLXDfF/xT8N/GXjrUNf8AhP8ACr/hTHgq4sdGgsPAH/Cc698Rf7OvbLSrS01e/wD+Eq8SW8V3efbdThurvynQJbfbPs8RMcak+djp5guIcFClCq8rlRxzryjDDOgq0auEWGVWc68cXGpKEsS6McPhq1CcY1niq2HnDCxxHz0qmarPMhp0Kdd5NPBY14mUYYN4aOIjPL1hI1qlTEwx0KsqcsW8PDC4TEYacY4h42vhalPBQxR4h+Gf/CPfDL4efEz/AIWD8Mdc/wCFhX3iux/4V/4e8V/2l8TfA/8Awiuopp32v4h+FPsCf8I1Y6lv8/SZPtE/2y2RpcR420eD/hn/AMJf4F+KHjn/AIWD8MfC/wDwrGx8NX3/AAh/jDxX/Ynjr4hf8JJqs+lfZPhh4f8AsEv/AAll9YeR9p1KPzrf7LazJNmTdtB4h8U/DfUvhl8PPC2gfCr/AIRv4j+G77xXP4++Kn/Cc69rH/CybLV9RS58L2H/AAg97brYeDv7H09XtvNspJH1Df51wFcAUeD/ABT8N9F8C/FDQPFnwq/4TTxr4qsfDUHw28f/APCc694c/wCFU3umarPd+Ir/AP4RXTbd7Tx1/ammSQ2nlX7xpZeR9ogLSMRXiOtxB/ZFaaoYv+0VmjhGPsss9t9R/tdQ54weO+qvC/2dep7SdeOY/U71fqX9qWwD8iVfin+wsRUjh8d/aqzlwhH2OUe3eW/28qftIweZLBvB/wBk3qe2niY5r9QvXeX/ANs2yx1vhL8O/wDhbHxC8OfD7/hOvhz8NP8AhI5r+L/hN/i14n/4Q34e6F9g0m/1XzfEfiX7Dc/2XDN9g+zQN5D+Zd3kEOB5m4cFeW/2S7urTz7e6+y3E9v9ptJfOtLjyZWj8+1m2jzbd9u5GwNysDgZrvfhL4l+H/g/4heHPEfxT+Gf/C4fAWmTX7+Ifhv/AMJnrfw+/wCEmiuNJv7Sxh/4TDw7BLe6L9n1S4sbzdBGxl/s/wCzviOVyOCvJLea7uprS2+x2stxPJbWfnPcfZLeSVmhtvtEgDT...&quot;,
+    &quot;solver&quot;: &quot;    begin MainProgram\n        write \&quot;\\\\     /\\n\&quot;\n        write \&quot; \\\\   /\\n\&quot;\n        write \&quot;  \\\\ /\\n\&quot;\n        write \&quot;\\\&quot;\\\&quot;\\\&quot;V\\\&quot;\\\&quot;\\\&quot;\&quot;\n    end MainProgram\n\n&quot;,
+    &quot;tags&quot;: null,
+    &quot;title&quot;: &quot;V de Vitória&quot;,
+    &quot;updateauthor&quot;: null,
+    &quot;updatedate&quot;: null,
+    &quot;videolink&quot;: &quot;&quot;,
+    &quot;code&quot;: &quot;begin MainProgram\\n\\tTeste\\n\rendMainProgram&quot;,
+    &quot;userEfficacy&quot;: 0.0,
+    &quot;userEfficiency&quot;: 0.0,
+    &quot;userOriginality&quot;: 0.0
+}
+</code></pre>
+<h3 id="variacoes-na-resposta-bem-sucedida">Variações na resposta bem sucedida</h3>
+<ul>
+<li>Se existir na base de dados um problema na tabela <strong>"user_evaluation</strong> com o par <strong><em>problemID + userEmail</em></strong>, o servidor responde com o problema inteiro, e no campo <strong>"code"</strong> do JSON recebido está o código escrito pelo aluno</li>
+<li>Se a dificuldade do problema pedido foi <strong>"Demonstração"</strong>, o servidor responde com o problema inteiro, e no campo <strong>"code"</strong> está o conteúdo do campo <strong>"solver"</strong> </li>
+<li>Senão, o servidor responde com o programa inteiro, e no campo <strong>"code"</strong> está <strong><em>"begin MainProgram\n\t\nendMainProgram"</em></strong></li>
+</ul>
+<h3 id="exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized">Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)</h3>
+<p>Se token enviado não for válido, o servidor devolve <code>"401 - Token not valid"</code>. Isto significa que o token <strong><em>JWT</em></strong> enviado não é válido. Isto pode acontecer em várias situações, como por exemplo, se o token já não existir.</p>
 
 
 

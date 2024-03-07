@@ -894,9 +894,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#tbc" class="md-nav__link">
+  <a href="#como-utilizar-este-endpoint" class="md-nav__link">
     <span class="md-ellipsis">
-      TBC
+      Como utilizar este endpoint?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-um-pedido-enviado-para-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de um pedido enviado para este endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta bem sucedida (código 200 OK)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)
     </span>
   </a>
   
@@ -1210,7 +1237,36 @@
 
 
 <h1 id="getcoursesjava">GetCourses.java</h1>
-<h3 id="tbc">TBC</h3>
+<p>Esta classe do tipo Servlet representa um endpoint da API que tem como objetivo obter a lista de todos os cursos da base de dados.
+<br>
+Ao receber um pedido HTTP, este endpoint verifica a validade do token JWT fornecido no corpo do pedido para garantir a autorização do utilizador.</p>
+<h3 id="como-utilizar-este-endpoint">Como utilizar este endpoint?</h3>
+<ol>
+<li>Dependendo da maneira como estiver a correr o projeto, deverá utilizar um dos dois URL's abaixo:<ul>
+<li>Se o projeto estiver a ser corrido localmente, deverá usar o URL <a href="http://localhost:8080/api/GetCourses">http://localhost:8080/api/GetCourses</a></li>
+<li>Se o projeto estiver a ser corrido remotamente, deverá usar o URL <a href="http://ram.ipt.pt:8080/api/GetCourses">http://ram.ipt.pt:8080/api/GetCourses</a></li>
+</ul>
+</li>
+<li>Deverá enviar (em formato <strong>JSON</strong>) no corpo do pedido HTTP os seguintes parâmetros:<ul>
+<li><code>"jwtToken"</code>: parâmetro do tipo string. Contém o token JWT que autoriza o utilizador a realizar a operação.</li>
+</ul>
+</li>
+<li>O endpoint retorna a lista de cursos disponíveis na base de dados se o token JWT for válido.</li>
+</ol>
+<h3 id="exemplo-de-um-pedido-enviado-para-este-endpoint">Exemplo de um pedido enviado para este endpoint</h3>
+<pre><code class="language-json">{
+    &quot;jwtToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c...&quot;
+}
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok">Exemplo de uma resposta bem sucedida (código 200 OK)</h3>
+<p>Se o token for válido, o servidor devolve 200 OK juntamente com a lista de cursos em formato JSON.</p>
+<pre><code class="language-json">[
+    {&quot;id&quot;:1,&quot;code&quot;:&quot;IPT&quot;,&quot;desc&quot;:&quot;Instituto Politecnico de Tomar&quot;},
+    {&quot;id&quot;:2,&quot;code&quot;:&quot;EXT&quot;,&quot;desc&quot;:&quot;External&quot;}
+]
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized">Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)</h3>
+<p>Se token enviado não for válido, o servidor devolve <code>"401 - Token not valid"</code>. Isto significa que o token <strong><em>JWT</em></strong> enviado não é válido. Isto pode acontecer em várias situações, como por exemplo, se o token já não existir.</p>
 
 
 
