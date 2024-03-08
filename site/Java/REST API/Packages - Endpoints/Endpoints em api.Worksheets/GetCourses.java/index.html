@@ -8,26 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://xyrsto.github.io/algorithmi-backoffice-documentation/">
+        <link rel="canonical" href="https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetCourses.java/">
       
       
+        <link rel="prev" href="../DeleteWorksheet.java/">
       
-        <link rel="next" href="Java/Java/">
+      
+        <link rel="next" href="../GetDifficulties.java/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Algorithmi Backoffice Docs</title>
+        <title>GetCourses.java - Algorithmi Backoffice Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#inicio" class="md-skip">
+        <a href="#getcoursesjava" class="md-skip">
           Ir para o conteúdo
         </a>
       
@@ -86,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="." title="Algorithmi Backoffice Docs" class="md-header__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
+    <a href="../../../../.." title="Algorithmi Backoffice Docs" class="md-header__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Início
+              GetCourses.java
             
           </span>
         </div>
@@ -201,11 +203,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
         
   
     
@@ -220,11 +220,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="Java/Java/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../Java/" class="md-tabs__link">
           
   
   Java
@@ -259,7 +261,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Algorithmi Backoffice Docs" class="md-nav__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
+    <a href="../../../../.." title="Algorithmi Backoffice Docs" class="md-nav__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -274,30 +276,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Início
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -306,77 +288,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#para-correr-o-projeto-localmente-nodejs" class="md-nav__link">
-    <span class="md-ellipsis">
-      Para correr o projeto localmente - NodeJS
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#para-correr-o-projeto-localmente-java" class="md-nav__link">
-    <span class="md-ellipsis">
-      Para correr o projeto localmente - Java
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ambiente-de-desenvolvimento" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ambiente de Desenvolvimento
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ambiente de Desenvolvimento">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#para-desenvolvimento-geral" class="md-nav__link">
-    <span class="md-ellipsis">
-      Para desenvolvimento geral
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tecnologias-utilizadas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tecnologias utilizadas
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -385,25 +296,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -414,7 +330,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Java
@@ -428,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/Java/" class="md-nav__link">
+      <a href="../../../../Java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -446,25 +362,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -475,7 +396,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             REST API
@@ -489,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/JWT/" class="md-nav__link">
+      <a href="../../../JWT/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages/" class="md-nav__link">
+      <a href="../../../Packages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -571,7 +492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Estrutura%20das%20packages%202/1.api/" class="md-nav__link">
+      <a href="../../../Estrutura%20das%20packages%202/1.api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -592,7 +513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Estrutura%20das%20packages%202/api.Authentication/" class="md-nav__link">
+      <a href="../../../Estrutura%20das%20packages%202/api.Authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Estrutura%20das%20packages%202/api.Worksheets/" class="md-nav__link">
+      <a href="../../../Estrutura%20das%20packages%202/api.Worksheets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -634,7 +555,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Estrutura%20das%20packages%202/myUtils/" class="md-nav__link">
+      <a href="../../../Estrutura%20das%20packages%202/myUtils/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,8 +581,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -671,11 +594,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_4" id="__nav_2_2_4_label" tabindex="0">
@@ -689,7 +612,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_4">
             <span class="md-nav__icon md-icon"></span>
             Packages   Endpoints
@@ -743,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Authentication/Login.java/" class="md-nav__link">
+      <a href="../../Endpoints%20em%20api.Authentication/Login.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -764,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Authentication/Register.java/" class="md-nav__link">
+      <a href="../../Endpoints%20em%20api.Authentication/Register.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -790,8 +713,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -801,11 +726,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_4_2" id="__nav_2_2_4_2_label" tabindex="0">
@@ -819,7 +744,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_4_2">
             <span class="md-nav__icon md-icon"></span>
             Endpoints em api.Worksheets
@@ -833,7 +758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/DeleteProblem.java/" class="md-nav__link">
+      <a href="../DeleteProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -854,7 +779,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/DeleteWorksheet.java/" class="md-nav__link">
+      <a href="../DeleteWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -872,10 +797,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetCourses.java/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    GetCourses.java
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -884,6 +829,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-utilizar-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como utilizar este endpoint?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-um-pedido-enviado-para-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de um pedido enviado para este endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta bem sucedida (código 200 OK)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -896,7 +897,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetDifficulties.java/" class="md-nav__link">
+      <a href="../GetDifficulties.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -917,7 +918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetLanguages.java/" class="md-nav__link">
+      <a href="../GetLanguages.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -938,7 +939,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetProblem.java/" class="md-nav__link">
+      <a href="../GetProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -959,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetProblems.java/" class="md-nav__link">
+      <a href="../GetProblems.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -980,7 +981,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetUserProblem.java/" class="md-nav__link">
+      <a href="../GetUserProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1001,7 +1002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetWorksheet.java/" class="md-nav__link">
+      <a href="../GetWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1022,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetWorksheetProblems.java/" class="md-nav__link">
+      <a href="../GetWorksheetProblems.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1043,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/GetWorksheets.java/" class="md-nav__link">
+      <a href="../GetWorksheets.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1064,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/InsertProblem.java/" class="md-nav__link">
+      <a href="../InsertProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1085,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/InsertWorksheet.java/" class="md-nav__link">
+      <a href="../InsertWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1106,7 +1107,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/UpdateProblem.java/" class="md-nav__link">
+      <a href="../UpdateProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1127,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Java/REST%20API/Packages%20-%20Endpoints/Endpoints%20em%20api.Worksheets/UpdateWorksheet.java/" class="md-nav__link">
+      <a href="../UpdateWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,57 +1188,37 @@
                   
 
 
-<h1 id="inicio">Início</h1>
-<hr />
-<h2 id="para-correr-o-projeto-localmente-nodejs">Para correr o projeto localmente - NodeJS</h2>
+<h1 id="getcoursesjava">GetCourses.java</h1>
+<p>Esta classe do tipo Servlet representa um endpoint da API que tem como objetivo obter a lista de todos os cursos da base de dados.
+<br>
+Ao receber um pedido HTTP, este endpoint verifica a validade do token JWT fornecido no corpo do pedido para garantir a autorização do utilizador.</p>
+<h3 id="como-utilizar-este-endpoint">Como utilizar este endpoint?</h3>
 <ol>
-<li>Instalar <a href="https://nodejs.org/en/download/">Node.js</a> se ainda não estiver instalado</li>
-<li>Clonar o repositório</li>
-<li>Dentro da pasta do projeto, executar:<ul>
-<li><code>npm install</code> (apenas na primeira vez para instalar as dependências)</li>
-<li><code>npm run dev</code> (para correr o projeto)</li>
+<li>Dependendo da maneira como estiver a correr o projeto, deverá utilizar um dos dois URL's abaixo:<ul>
+<li>Se o projeto estiver a ser corrido localmente, deverá usar o URL <a href="http://localhost:8080/api/GetCourses">http://localhost:8080/api/GetCourses</a></li>
+<li>Se o projeto estiver a ser corrido remotamente, deverá usar o URL <a href="http://ram.ipt.pt:8080/api/GetCourses">http://ram.ipt.pt:8080/api/GetCourses</a></li>
 </ul>
 </li>
-<li>Abrir o navegador em <a href="http://localhost:5173">http://localhost:5173</a></li>
-</ol>
-<h2 id="para-correr-o-projeto-localmente-java">Para correr o projeto localmente - Java</h2>
-<ol>
-<li>Instalar o IDE <a href="https://netbeans.apache.org/front/main/download/nb21/">Netbeans</a> se ainda não estiver instalado</li>
-<li>Clonar o repositório</li>
-<li>No Netbeans, selecionar na barra superior <strong>"Service"</strong> → <strong>"Servers"</strong> → <strong>"Add Server"</strong></li>
-<li>Selecionar a opção <strong>"GlassFish Server"</strong>. É importante instalar a versão 5.1.0 deste servidor.
-<br/>
-<img alt="alt text" src="image.png" /></li>
-<li>Escolher o nome do servidor, onde o queremos alojar, ativar <em>Driver</em> JDBC e qual a plataforma Java que pretendemos associar ao mesmo
-<br/>
-<img alt="alt text" src="image-1.png" />
-<img alt="alt text" src="image-2.png" /></li>
-<li>Carregar botão direito em cima do projeto chamado <strong>"AlgorithmiBO"</strong> e selecionar <strong>"Clean and Build"</strong>. Após isso, selecionar <strong>"Run"</strong></li>
-<li>Abrir o navegador em <a href="http://localhost:8080">http://localhost:8080</a></li>
-</ol>
-<h2 id="ambiente-de-desenvolvimento">Ambiente de Desenvolvimento</h2>
-<p>Utilizar o editor <a href="https://code.visualstudio.com/">Visual Studio Code</a> com as seguintes extensões:</p>
-<h3 id="para-desenvolvimento-geral">Para desenvolvimento geral</h3>
-<ul>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next">JavaScript and TypeScript Nightly</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode">Svelte for VS Code</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=ardenivanov.svelte-intellisense">Svelte Intellisense</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">Tailwind CSS IntelliSense</a></li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier - Code formatter</a></li>
+<li>Deverá enviar (em formato <strong>JSON</strong>) no corpo do pedido HTTP os seguintes parâmetros:<ul>
+<li><code>"jwtToken"</code>: parâmetro do tipo string. Contém o token JWT que autoriza o utilizador a realizar a operação.</li>
 </ul>
-<h2 id="tecnologias-utilizadas">Tecnologias utilizadas</h2>
-<ul>
-<li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
-<li><a href="https://prettier.io/">Prettier</a></li>
-<li><a href="https://svelte.dev/">Svelte</a></li>
-<li><a href="https://kit.svelte.dev/">SvelteKit</a></li>
-<li><a href="https://www.skeleton.dev/">Skeleton</a></li>
-<li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
-<li><a href="https://microsoft.github.io/monaco-editor/">Monaco Editor</a></li>
-<li><a href="https://xtermjs.org/">Xterm.js</a></li>
-<li><a href="https://github.com/GoogleChromeLabs/comlink">Comlink</a></li>
-<li><a href="https://www.antlr.org/">ANTLR</a></li>
-</ul>
+</li>
+<li>O endpoint retorna a lista de cursos disponíveis na base de dados se o token JWT for válido.</li>
+</ol>
+<h3 id="exemplo-de-um-pedido-enviado-para-este-endpoint">Exemplo de um pedido enviado para este endpoint</h3>
+<pre><code class="language-json">{
+    &quot;jwtToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c...&quot;
+}
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-bem-sucedida-codigo-200-ok">Exemplo de uma resposta bem sucedida (código 200 OK)</h3>
+<p>Se o token for válido, o servidor devolve 200 OK juntamente com a lista de cursos em formato JSON.</p>
+<pre><code class="language-json">[
+    {&quot;id&quot;:1,&quot;code&quot;:&quot;IPT&quot;,&quot;desc&quot;:&quot;Instituto Politecnico de Tomar&quot;},
+    {&quot;id&quot;:2,&quot;code&quot;:&quot;EXT&quot;,&quot;desc&quot;:&quot;External&quot;}
+]
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized">Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)</h3>
+<p>Se token enviado não for válido, o servidor devolve <code>"401 - Token not valid"</code>. Isto significa que o token <strong><em>JWT</em></strong> enviado não é válido. Isto pode acontecer em várias situações, como por exemplo, se o token já não existir.</p>
 
 
 
@@ -1292,10 +1273,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>
