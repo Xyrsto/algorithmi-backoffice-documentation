@@ -1,4 +1,4 @@
-# Porquê JWT
+# JWT
 *** 
 ## O que é JWT?
 
