@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://xyrsto.github.io/algorithmi-backoffice-documentation/Java/REST%20API/JWT/">
       
       
+        <link rel="prev" href="../../Java/">
       
-      <link rel="icon" href="/algorithmi-backoffice-documentation/assets/images/favicon.png">
+      
+        <link rel="next" href="../Packages/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
-        <title>Algorithmi Backoffice Docs</title>
+        <title>JWT - Algorithmi Backoffice Docs</title>
       
     
     
-      <link rel="stylesheet" href="/algorithmi-backoffice-documentation/assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="/algorithmi-backoffice-documentation/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("/algorithmi-backoffice-documentation/",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#jwt" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -77,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="/algorithmi-backoffice-documentation/." title="Algorithmi Backoffice Docs" class="md-header__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
+    <a href="../../.." title="Algorithmi Backoffice Docs" class="md-header__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -97,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              JWT
             
           </span>
         </div>
@@ -194,7 +205,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/algorithmi-backoffice-documentation/." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
     
@@ -209,11 +220,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/algorithmi-backoffice-documentation/Java/Java/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../Java/" class="md-tabs__link">
           
   
   Java
@@ -248,7 +261,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/algorithmi-backoffice-documentation/." title="Algorithmi Backoffice Docs" class="md-nav__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
+    <a href="../../.." title="Algorithmi Backoffice Docs" class="md-nav__button md-logo" aria-label="Algorithmi Backoffice Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -266,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -283,25 +296,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -312,7 +330,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Java
@@ -326,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/Java/" class="md-nav__link">
+      <a href="../../Java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -344,25 +362,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -373,7 +396,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             REST API
@@ -384,10 +407,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/JWT/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    JWT
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -396,6 +439,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#o-que-e-jwt" class="md-nav__link">
+    <span class="md-ellipsis">
+      O que é JWT?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como funciona?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-deve-ser-utilizado-para-garantir-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por que deve ser utilizado para garantir segurança?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-utilizamos-jwt-neste-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como utilizamos JWT neste projeto?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -408,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages/" class="md-nav__link">
+      <a href="../Packages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -469,7 +568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Estrutura%20das%20packages%202/api.Authentication/" class="md-nav__link">
+      <a href="../Estrutura%20das%20packages%202/api.Authentication/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -490,7 +589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Estrutura%20das%20packages%202/api.Worksheets/" class="md-nav__link">
+      <a href="../Estrutura%20das%20packages%202/api.Worksheets/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -511,7 +610,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Estrutura%20das%20packages%202/api/" class="md-nav__link">
+      <a href="../Estrutura%20das%20packages%202/api/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Estrutura%20das%20packages%202/myUtils/" class="md-nav__link">
+      <a href="../Estrutura%20das%20packages%202/myUtils/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -641,7 +740,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Authentication/Login.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Authentication/Login.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -662,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Authentication/Register.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Authentication/Register.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -731,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/DeleteProblem.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/DeleteProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/DeleteWorksheet.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/DeleteWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetCourses.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetCourses.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -794,7 +893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetDifficulties.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetDifficulties.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -815,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetLanguages.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetLanguages.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -836,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetProblem.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -857,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetProblems.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetProblems.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -878,7 +977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetUserProblem.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetUserProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -899,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetWorksheet.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -920,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetWorksheetProblems.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetWorksheetProblems.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -941,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetWorksheets.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/GetWorksheets.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -962,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/InsertProblem.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/InsertProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -983,7 +1082,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/InsertWorksheet.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/InsertWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1004,7 +1103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/UpdateProblem.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/UpdateProblem.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1025,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/algorithmi-backoffice-documentation/Java/REST%20API/Packages%20-%20Classes/Classes%20em%20api.Worksheets/UpdateWorksheet.java/" class="md-nav__link">
+      <a href="../Packages%20-%20Classes/Classes%20em%20api.Worksheets/UpdateWorksheet.java/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1082,8 +1181,48 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="jwt">JWT</h1>
+<hr />
+<h2 id="o-que-e-jwt">O que é JWT?</h2>
+<p>JWT, que significa "JSON Web Token", é um padrão aberto (RFC 7519) que define uma forma compacta e autónoma para transmitir informações entre partes como um objeto JSON. Essas informações podem ser verificadas e confiáveis porque são assinadas digitalmente. JWTs podem ser assinados usando um segredo (com o algoritmo HMAC) ou um par de chaves pública/privada usando RSA ou ECDSA.</p>
+<h2 id="como-funciona">Como funciona?</h2>
+<p>O funcionamento básico de um JWT é simples: ele consiste em três partes separadas por pontos (<code>.</code>), que são:</p>
+<ol>
+<li><strong>Header</strong>: Contém o tipo de token (que é JWT) e o algoritmo de assinatura utilizado.</li>
+<li><strong>Payload</strong>: É onde os dados são armazenados. O payload contém as afirmações (ou como são chamadas normalmente, <em>claims</em>), que são declarações sobre uma entidade (geralmente o utilizador) e metadados adicionais.</li>
+<li><strong>Assinatura</strong>: Para verificar a integridade do token, é necessária uma assinatura. A assinatura é gerada combinando o header codificado, o payload codificado e uma chave secreta (ou chave pública, no caso de assinatura assimétrica).</li>
+</ol>
+<h2 id="por-que-deve-ser-utilizado-para-garantir-seguranca">Por que deve ser utilizado para garantir segurança?</h2>
+<p>JWT é amplamente utilizado para autenticação e autorização em aplicações web e APIs por várias razões:</p>
+<ul>
+<li><strong>Simplicidade</strong>: O formato compacto de JWT torna-o fácil de ser enviado através de HTTP e armazenado em cookies ou cabeçalhos HTTP.</li>
+<li><strong>Segurança</strong>: JWTs podem ser assinados e criptografados, garantindo que os dados não sejam adulterados durante a transmissão.</li>
+<li><strong>Escalabilidade</strong>: JWTs são autocontidos, o que significa que as informações relevantes são incluídas no próprio token, eliminando a necessidade de consultar um banco de dados para verificar as credenciais do utilizador a cada solicitação.</li>
+<li><strong>Interoperabilidade</strong>: JWTs são baseados em JSON, tornando-os compatíveis com uma ampla variedade de linguagens de programação e frameworks.</li>
+<li><strong>Desempenho</strong>: Como os JWTs podem ser verificados sem a necessidade de acessar um banco de dados ou servidor de sessão, eles podem melhorar o desempenho de aplicações com grande carga de tráfego.</li>
+</ul>
+<h2 id="como-utilizamos-jwt-neste-projeto">Como utilizamos JWT neste projeto?</h2>
+<p>Cada vez um utilizador se autentica no sistema, é gerado um novo token <strong><em>JWT</em></strong> e uma chave para o assinar. Essa chave é então guardada na base de dados, juntamente com o <strong><em>ID</em></strong> da chave, utilizado para a identificar.
+<br> 
+Sempre que um utilizador pretender utilizar um endpoint da <strong><em>API</em></strong>, este terá de estar autenticado no sistema, pois só assim terá um token JWT válido para ser enviado. O utilizador só terá acesso ao conteúdo do endpoint, se o token <strong><em>JWT</em></strong> enviado for verificado, isto é, se a chave criada no momento da autenticação conseguir descompactar este token.
+<br>
+Dentro de cada token vão todos os dados relevantes para o utilizador autenticado no sistema, podendo estes ser utilizados em qualquer parte do frontend, visto que o token é guardado na <strong><em>localStorage</em></strong> do browser.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1125,10 +1264,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/algorithmi-backoffice-documentation/", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "/algorithmi-backoffice-documentation/assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
     
     
-      <script src="/algorithmi-backoffice-documentation/assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>
