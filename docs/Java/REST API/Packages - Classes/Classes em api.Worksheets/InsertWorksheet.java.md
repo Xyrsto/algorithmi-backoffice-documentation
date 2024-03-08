@@ -10,7 +10,7 @@ Esta classe do tipo Servlet representa um endpoint da API que tem como objetivo 
     - `"num"`: parâmetro do tipo int. Contém o número da nova ficha de exercícios.
     - `"title"`: parâmetro do tipo string. Contém o título da nova ficha de exercícios.
     - `"image"`: parâmetro do tipo string. Contém o caminho para a imagem associada à nova ficha de exercícios.
-    - `"sendDate"`: parâmetro do tipo string. Contém a data de envio da nova ficha de exercícios.
+    - `"sendDate"`: parâmetro do tipo string. Contém a data limite para resolução da nova ficha de exercícios.
     - `"problems"`: parâmetro do tipo string. Contém uma lista de problemas associados à nova ficha de exercícios, separados por vírgula.
     - `"date"`: parâmetro do tipo string. Contém a data de criação da nova ficha de exercícios.
     - `"author"`: parâmetro do tipo string. Contém o autor da nova ficha de exercícios.
