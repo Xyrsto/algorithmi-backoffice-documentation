@@ -9,5 +9,6 @@
 - ```python -m pip install mkdocs-material --user```, para instalar o tema que é utilizado na documentação
 6. Escrever no terminal ```python -m mkdocs serve``` para iniciar o servidor
 7. Aceder no browser a <http://localhost:8000/>
-8. Após terminar, fazer push para o github das alterações feitas e executar o comando ```python -m mkdocs gh-deploy``` dentro da pasta raíz, para automaticamente publicar a documentação na web
+8. Após terminar a edição da documentação, executar o comando ```python -m mkdocs gh-deploy``` dentro da pasta raíz, para automaticamente publicar a documentação na web
+9. Finalmente, fazer push das alterações para o branch **"main"**.
   
