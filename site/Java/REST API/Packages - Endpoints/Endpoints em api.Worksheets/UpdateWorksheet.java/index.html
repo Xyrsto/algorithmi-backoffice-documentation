@@ -664,6 +664,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Endpoints%20em%20api.Authentication/GetAllUsers.java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GetAllUsers.java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Endpoints%20em%20api.Authentication/GetUserByID.java/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GetUserByID.java
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Endpoints%20em%20api.Authentication/Login.java/" class="md-nav__link">
         
   
@@ -1059,6 +1101,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    UpdateWorksheet.java
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1068,6 +1121,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#como-utilizar-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como utilizar este endpoint?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-um-pedido-enviado-para-este-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de um pedido enviado para este endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-bem-sucedida-codigo-200" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta bem sucedida (código 200)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1121,7 +1229,47 @@
 
 
 <h1 id="updateworksheetjava">UpdateWorksheet.java</h1>
-<p>not finished</p>
+<p>Esta classe do tipo Servlet representa um endpoint da API que tem como objetivo atualizar uma ficha de trabalho</p>
+<h3 id="como-utilizar-este-endpoint">Como utilizar este endpoint?</h3>
+<ul>
+<li>Dependendo da maneira como estiver a correr o projeto, deverá utilizar um dos dois URL's abaixo:<ul>
+<li>Se o projeto estiver a ser corrido localmente, deverá usar o URL <a href="http://localhost:8080/AlgorithmiBO/api/UpdateWorksheet">http://localhost:8080/AlgorithmiBO/api/UpdateWorksheet</a></li>
+<li>Se o projeto estiver a ser corrido remotamente, deverá usar o URL <a href="http://ram.ipt.pt:8080/AlgorithmiBO/api/UpdateWorksheet">http://ram.ipt.pt:8080/AlgorithmiBO/api/UpdateWorksheet</a></li>
+</ul>
+</li>
+<li>Deverá enviar (em formato <strong>JSON</strong>) no corpo do pedido HTTP os seguintes parâmetros:<ul>
+<li><code>"id"</code>: parâmetro do tipo inteiro. Contém o ID que identifica a ficha de trabalho na base de dados.</li>
+<li><code>"num"</code>: parâmetro do tipo inteiro. Contém o número da ficha de trabalho.</li>
+<li><code>"title"</code>: parâmetro do tipo string. Contém o título relacionado da ficha de trabalho.</li>
+<li><code>"image"</code>: parâmetro do tipo string. Contém a imagem da ficha de trabalho em base64.</li>
+<li><code>"sendDate"</code>: parâmetro do tipo string. Contém a data de envio da ficha de trabalho.</li>
+<li><code>"problems"</code>: parâmetro do tipo string. Contém os problemas relacionados à ficha de trabalho.</li>
+<li><code>"date"</code>: parâmetro do tipo string. Contém a data associada à ficha de trabalho.</li>
+<li><code>"author"</code>: parâmetro do tipo string. Contém o autor associado à ficha de trabalho.</li>
+<li><code>"courseId"</code>: parâmetro do tipo string. Contém o ID do curso associado à ficha de trabalho.</li>
+<li><code>"updateUser"</code>: parâmetro do tipo string. Contém o utilizador responsável pela atualização da ficha de trabalho.</li>
+<li><code>"jwtToken"</code>: parâmetro do tipo string. Contém o token JWT que autoriza o utilizador a realizar da ficha de trabalho.</li>
+</ul>
+</li>
+</ul>
+<h3 id="exemplo-de-um-pedido-enviado-para-este-endpoint">Exemplo de um pedido enviado para este endpoint</h3>
+<pre><code class="language-json">{
+    &quot;id&quot;: 123,
+    &quot;num&quot;: 456,
+    &quot;title&quot;: &quot;Título do exemplo&quot;,
+    &quot;image&quot;: &quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPm...&quot;,
+    &quot;sendDate&quot;: &quot;2024-03-14&quot;,
+    &quot;problems&quot;: &quot;Problemas relacionados ao exemplo&quot;,
+    &quot;date&quot;: &quot;username&quot;,
+    &quot;courseId&quot;: &quot;123&quot;,
+    &quot;updateUser&quot;: &quot;username&quot;,
+    &quot;jwtToken&quot;: &quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c&quot;
+}
+</code></pre>
+<h3 id="exemplo-de-uma-resposta-bem-sucedida-codigo-200">Exemplo de uma resposta bem sucedida (código 200)</h3>
+<p>Se a atualização for feita com sucesso, o servidor devolve código 200.</p>
+<h3 id="exemplo-de-uma-resposta-mal-sucedida-codigo-401-unauthorized">Exemplo de uma resposta mal sucedida (código 401 - UNAUTHORIZED)</h3>
+<p>Se token enviado não for válido, o servidor devolve <code>"401 - Token not valid"</code>. Isto significa que o token <strong><em>JWT</em></strong> enviado não é válido. Isto pode acontecer em várias situações, como por exemplo, se o token já não existir.</p>
 
 
 
